@@ -435,11 +435,6 @@
     
 
     
-      <div id="bitcoin" style="display: inline-block">
-        <img id="bitcoin_qr" src="/images/bitcoin.png" alt="kai 比特币"/>
-        <p>比特币</p>
-      </div>
-    
 
   </div>
 </div>
@@ -483,7 +478,7 @@
 
   
 
-
+  
 
         </div>
         
@@ -794,6 +789,23 @@
 
 
 
+
+    <!-- gitalk 评论系统 2019.8.19 -->
+ 
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+   <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+ 	const gitalk = new Gitalk({
+ 	  clientID: '4a00826fa1a2739c5349',
+ 	  clientSecret: '99530d0cd1e2510ee967c1e03de21cd0df3fd317',
+ 	  repo: 'https://github.com/kaierrao/comment.git',
+ 	  owner: 'kaierrao',
+ 	  admin: ['kaierrao'],	// 注意使用列表
+ 	  id: location.pathname, // 依据官方readme,这里可能会有bug, post lable长度超过50会有报错
+ 	})
+ 	gitalk.render('gitalk-container')
+   </script>
+ 
 
 
   
